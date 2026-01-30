@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { environment } from '@environments/environment';
 
 @Component({
   selector: 'gift-side-menu-header-component',
@@ -8,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class GiftMenuHeaderComponent {
 
+  protected envs = signal(environment);
 }
