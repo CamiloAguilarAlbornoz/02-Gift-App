@@ -1,6 +1,6 @@
 import { Component, input, signal } from '@angular/core';
-import { Gif } from '../../interfaces/gif';
 import { GifListItem } from "./gif-list-item/gif-list-item";
+import { Gif } from '../../interfaces/gif.interface';
 
 @Component({
   selector: 'git-list-component',
@@ -10,5 +10,5 @@ import { GifListItem } from "./gif-list-item/gif-list-item";
 })
 export class GitListComponent {
 
-  public images = input.required<String[]>();
+  public images = input.required<Gif[]>();
 }
